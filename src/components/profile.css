@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 .banner-bg{
-    height: 500px;
+    height: 650px;
     background: transparent;
     background-size: cover;
     overflow: hidden;
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 650px;
 }
 .banner-text{
     color: #fff;

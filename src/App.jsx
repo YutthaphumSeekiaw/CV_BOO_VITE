@@ -9,27 +9,29 @@ import Profile from './components/profile'
 
 import './App.css'
 
+import ParticlesBg from 'particles-bg'
+
 export default function App() {
-  const [vantaEffect,setVantaEffect] = useState(0)
-  const vantaRef = useRef(null)
-  useEffect(
-    () =>{
-      if(!vantaEffect){
-        setVantaEffect(NET({
-          el:vantaRef.current,
-          THREE,
-          //  color: 0x37415f,
-          //  backgroundColor: 0xf0620,
-          // points: "10.00",
-          // maxDistance: "40.00",
-          // spacing: "20.00",
-        }))
-      }
-    return () => {
-      if(vantaEffect) vantaEffect.destroy()
-    }
-    },[vantaEffect]
-  )
+  // const [vantaEffect,setVantaEffect] = useState(0)
+  // const vantaRef = useRef(null)
+  // useEffect(
+  //   () =>{
+  //     if(!vantaEffect){
+  //       setVantaEffect(NET({
+  //         el: vantaRef.current,
+  //         THREE,
+  //         //  color: 0x37415f,
+  //         //  backgroundColor: 0xf0620,
+  //         // points: "10.00",
+  //         // maxDistance: "40.00",
+  //         // spacing: "20.00",
+  //       }))
+  //     }
+  //   return () => {
+  //     if(vantaEffect) vantaEffect.destroy()
+  //   }
+  //   },[vantaEffect]
+  // )
 
   const style = () => {
     return (
@@ -46,39 +48,25 @@ export default function App() {
         }
         .styl {
           padding-top: 80px;
+          margin-top: 80px
+        }
+        .contrainner{
+          max-width: 960px;
+          margin: 0 auto;
         }
       `}</style>
     )
   }
 
   return (
-    // <>
-    // <div style={{height:"100vh",width:"100%"}} className='con' ref={vantaRef}>
-    // {/* <Header></Header> */}
-    // {/* <StickyNav length='40'><Header></Header></StickyNav> */}
-    //   {/* {style()}
-    //   <StickyNav length='40'><Header></Header></StickyNav> */}
-    //   {/* <div className='styl'>
-    //   </div> */}
-     
-      
-    // </div>
-    // <Header></Header>
-    //   <Profile/>
-    //   <Profile/>
-    //   <Profile/>
-    //   <Profile/>
-    //   <Profile/>
-    // </>
-    <div ref={vantaRef}>
-      <div>
-      <Header></Header>
-      
+    <>
+      {style()}
+      <StickyNav length='40'><Header></Header></StickyNav>
+      <div className='stly'> </div>
+      {/* <Header></Header> */}
       <Profile></Profile>
-
-      <Profile></Profile>
-      </div>
-    </div>
+      <ParticlesBg color="#ff0000" type="cobweb" bg={true} />
+    </>
   )
 }
 
