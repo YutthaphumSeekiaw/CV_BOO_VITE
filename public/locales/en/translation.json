@@ -1,0 +1,10 @@
+{
+    "header":{
+        "home" : "Home",
+        "about" : "About",
+        "contract" : "Contract"
+    },
+    "banner":{
+        "title":"Leanning React"
+    }
+}

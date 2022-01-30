@@ -1,0 +1,11 @@
+{
+    "header":{
+        "home" : "หน้าหลัก",
+        "about" : "เกี่ยวกับ",
+        "contract" : "ติดต่อ"
+    },
+    "banner":{
+        "title":"เรียน React"
+    }
+    
+}

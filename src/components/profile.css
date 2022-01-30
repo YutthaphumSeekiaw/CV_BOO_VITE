@@ -1,0 +1,49 @@
+.contrainner{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.banner-bg{
+    height: 500px;
+    background: transparent;
+    background-size: cover;
+    overflow: hidden;
+}
+.banner-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.banner-text{
+    color: #fff;
+    text-align: center;
+}
+.banner-btn{
+    background: rgb(43, 74, 211);
+    display: inline-block;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.banner-btn:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.profilepic{
+    border-radius: 100%;
+    width: 250px;
+    margin-top: 30px;
+  }
+
+@media screen and (max-width:480px) {
+    .banner-text{
+        padding: 0 2rem;
+    }
+}
