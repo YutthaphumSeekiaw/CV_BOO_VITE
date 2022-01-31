@@ -6,6 +6,10 @@ import 'react-js-stickynav/dist/index.css'
 
 import Header from './components/header'
 import Profile from './components/profile'
+import Skills from './components/skills'
+import Experiences from './components/experiences'
+import Education from './components/education'
+import Footer from './components/footer'
 
 import './App.css'
 
@@ -43,7 +47,7 @@ export default function App() {
         }
         .scrollNav {
           transition: all 0.5s ease-in;
-          background: #333;
+          background: rgb(20 26 50);
           width: 100%;
         }
         .styl {
@@ -62,10 +66,18 @@ export default function App() {
     <>
       {style()}
       <StickyNav length='40'><Header></Header></StickyNav>
-      <div className='stly'> </div>
-      {/* <Header></Header> */}
+      <div className='stly'> 
+      
+      {/* <Skills></Skills> */}
+      {/* <Experiences></Experiences>
+      <Education></Education> */}
+      </div>
       <Profile></Profile>
-      <ParticlesBg color="#ff0000" type="cobweb" bg={true} />
+      <Skills></Skills>
+      <Footer></Footer>
+      {/* <Header></Header> */}
+
+      <ParticlesBg color="#ff0000" num={200}  type="cobweb" bg={true} />
     </>
   )
 }

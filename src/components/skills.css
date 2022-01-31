@@ -1,0 +1,20 @@
+.contrainner{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.skills-bg{
+    height: 650px;
+    background: rgb(20, 26, 50);
+    background-size: cover;
+    overflow: hidden;
+}
+.skills-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+.skills-text{
+    color: #333;
+    text-align: center;
+}

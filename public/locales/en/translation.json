@@ -1,10 +1,16 @@
 {
     "header":{
-        "home" : "Home",
-        "about" : "About",
-        "contract" : "Contract"
+        "home" : "Profile",
+        "skills" : "Skills",
+        "experiences" : "Experiences",
+        "education" : "Education"
     },
-    "banner":{
-        "title":"Leanning React"
+    "profile":{
+        "title":"Mr.Yutthaphum Seekiaw",
+        "person":"Date of birth: Fabruary 23 1991, Age: 30, Gender: Male",
+        "address":"Present Address: 260/305 Unio H Tiwanon, Bangkhen, Mueang Nonthaburi, Nonthaburi 10110 Thailand",
+        "mobile":"Mobile: 0626983863",
+        "email":"Email: yutthaphum_bo@hotmail.com",
+        "btn":"Download CV"
     }
 }

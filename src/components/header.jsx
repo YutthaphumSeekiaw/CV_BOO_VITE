@@ -32,37 +32,31 @@ function header() {
           </div>
           <ul className={click?"menu active":"menu"}>
           <li className='menu-link' onClick={closeMobileMenu}>
-               {/* <Link  to="banner" spy={true} smooth={true} offset={50} duration={500} href='#banner' onClick={closeMobileMenu}>Home</Link> */}
-               <Link href='#profile' to='profile'  spy="true" smooth="true" offset={50} duration={500}>{t('header.home')}</Link>
+                <Link href='#profile' to='profile'  spy="true" smooth="true" offset={50} duration={500}>{t('header.home')}</Link>
             </li>
             <li className='menu-link' onClick={closeMobileMenu}>
-               <Link  to="profile" spy="true" smooth="true" offset={50} duration={500} href='#profile' onClick={closeMobileMenu}>{t('header.about')}</Link>
+               <Link  to="skills" spy="true" smooth="true" offset={50} duration={500} href='#skills' onClick={closeMobileMenu}>{t('header.skills')}</Link>
             </li>
-            {/* <li className='menu-link' onClick={closeMobileMenu}>
-               <Link to="calltoaction" spy={true} smooth={true} offset={50} duration={500} href='#calltoaction' onClick={closeMobileMenu}>{t('header.contract')}</Link>
-            </li> */}
             <li className='menu-link' onClick={closeMobileMenu}>
-               <a onClick={() => handleClickLang('en')}>EN</a>
+               <Link  to="experiences" spy="true" smooth="true" offset={50} duration={500} href='#experiences' onClick={closeMobileMenu}>{t('header.experiences')}</Link>
+            </li>
+            <li className='menu-link' onClick={closeMobileMenu}>
+               <Link  to="education" spy="true" smooth="true" offset={50} duration={500} href='#education' onClick={closeMobileMenu}>{t('header.education')}</Link>
+            </li>
+
+            <li className='menu-link' onClick={closeMobileMenu}>
+               <a style={{cursor:"pointer"}} onClick={() => handleClickLang('en')}>EN</a>
                <a>  |  </a>
-               <a onClick={() => handleClickLang('th')}>TH</a>
+               <a  style={{cursor:"pointer"}} onClick={() => handleClickLang('th')}>TH</a>
             </li>
-            {/* <li className='menu-link' onClick={closeMobileMenu}>
-               <a href='#'>Blog</a>
-            </li> */}
-            
+
           </ul>
-          <div className='mobile-menu' onClick={handleClick}>
+          <div style={{cursor:"pointer"}} className='mobile-menu' onClick={handleClick}>
             {click?(<FiX/>):(<FiMenu/>)}
           </div>
         </div>
 
-        {/* <div className="profile-con">
-        <img src={profilepic} title="profile" className='profilepic'></img>
-        </div>  */}
-        
-         
       </div>
-      {/* <Profile></Profile> */}
     </div>
     </>
   )
